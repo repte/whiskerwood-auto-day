@@ -1,0 +1,1 @@
+Initial preview: automatic day confirmation with an on/off setting. Enabled by default. In-game testing pending.
