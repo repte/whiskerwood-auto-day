@@ -24,11 +24,12 @@ Turn it off whenever you prefer to confirm each day yourself.
 
 The setting is available in English and German; other game languages use English.
 
-## Preview and Installation
+## Download and Installation
 
-**Windows preview `0.1.0-preview`. In-game validation is pending.**
+**Windows release `v0.1.0`.**
 
-For a prepared local package, close the game and place the `AutoDay` folder here:
+Download `AutoDay-v0.1.0.zip` from the [v0.1.0 release](https://github.com/repte/whiskerwood-auto-day/releases/tag/v0.1.0).
+Close the game, extract the ZIP, and place its `AutoDay` folder here:
 
 ```text
 %LOCALAPPDATA%\Whiskerwood\Saved\mods\AutoDay\

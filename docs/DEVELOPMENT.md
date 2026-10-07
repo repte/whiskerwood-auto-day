@@ -1,6 +1,6 @@
 # Auto Day Development
 
-Standalone Whiskerwood mod, version `0.1.0-preview`. The native mod setting is
+Standalone Whiskerwood mod, version `0.1.0`. The native mod setting is
 **enabled by default**. English and German labels are provided, with English as
 the fallback for other game languages.
 
@@ -77,8 +77,9 @@ Auto Day is enabled by default. The native mod settings switch can disable it.
 
 ## Manual Validation
 
-The automated checks exercise the compiled actor with native HUD fixtures, not
-the full running game. In-game validation is pending and is performed by the user.
+Automated checks use the compiled actor with native HUD fixtures, not the full
+running game. Initial gameplay feedback on 2026-10-07 was positive. The following
+checklist covers additional scenarios and compatibility testing.
 
 1. Confirm the setting appears once and starts on for a fresh setting.
 2. With no window open, let the day end. The next day should start within about a second.
@@ -86,13 +87,16 @@ the full running game. In-game validation is pending and is performed by the use
 4. Test a manual pause coinciding with the end-of-day stop; confirm the documented NextDay behavior.
 5. Disable Auto Day and reload a save: manual day confirmation must remain usable.
 
-The shipped game's HUD timing and view behavior still require this gameplay test.
+The shipped game's HUD timing and view behavior must be checked through gameplay.
 
 ## Publication Preparation
 
-The source repository is `repte/whiskerwood-auto-day`. Workshop text and change notes are
-drafted under `workshop/`; the same unchanged image is used for the README and
-the prepared Workshop preview. No existing mod's Workshop item ID is reused.
+The source repository is `repte/whiskerwood-auto-day`. The first release is
+`v0.1.0`; its `AutoDay-v0.1.0.zip` contains only `AutoDay/AutoDay.pak` and
+`AutoDay/AutoDay.uplugin`. Workshop text and change notes are prepared under
+`workshop/` for the user's manual submission. The same unchanged image is used
+for the README and the prepared Workshop preview. Create a new Workshop item;
+do not reuse another mod's item ID.
 
 Source code is provided under the MIT license. Whiskerwood and third-party game
 assets remain the property of their respective owners.

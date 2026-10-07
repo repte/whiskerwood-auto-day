@@ -1,7 +1,7 @@
 {
   "Name": "AutoDay",
-  "Description": "Automatic day advancement through the normal NextDay action. Enabled by default; switch off in native mod settings. Preview build.",
-  "Version": "0.1.0-preview",
+  "Description": "Automatic day advancement through the normal NextDay action. Enabled by default; switch off in native mod settings.",
+  "Version": "0.1.0",
   "CreatedBy": "repte",
   "EngineVersion": "5.8"
 }

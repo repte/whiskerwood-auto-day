@@ -20,7 +20,7 @@ SOURCE = ROOT / "Content" / "Mods" / "AutoDay"
 
 descriptor = json.loads((SOURCE / "AutoDay.uplugin").read_text(encoding="utf-8-sig"))
 assert descriptor["Name"] == "AutoDay", "Unexpected mod descriptor name"
-assert descriptor["Version"] == "0.1.0-preview", "Unexpected mod version"
+assert descriptor["Version"] == "0.1.0", "Unexpected mod version"
 assert descriptor["EngineVersion"] == "5.8", "Unexpected engine version"
 assert descriptor["Description"] and descriptor["CreatedBy"], "Incomplete mod descriptor"
 assert not descriptor.get("Modules"), "AutoDay must not require a native DLL"
@@ -93,7 +93,7 @@ for asset_path in sorted(RUNTIME_PATHS):
 saved = Path(unreal.Paths.project_saved_dir()).resolve()
 saved.mkdir(parents=True, exist_ok=True)
 (saved / "AutoDay-PackageSetup.json").write_text(
-    json.dumps({"mod": "AutoDay", "version": "0.1.0-preview", "chunk": chunk,
+    json.dumps({"mod": "AutoDay", "version": "0.1.0", "chunk": chunk,
                 "runtime_assets": list(RUNTIME_NAMES)}, indent=2) + "\n",
     encoding="utf-8",
 )

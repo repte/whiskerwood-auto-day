@@ -43,7 +43,7 @@ if ($files.Count -ne 2 -or @($files | Where-Object { $_.PSIsContainer -or $_.Nam
 $pak = Join-Path $package 'AutoDay.pak'
 $descriptor = Join-Path $package 'AutoDay.uplugin'
 $mod = Get-Content -LiteralPath $descriptor -Raw | ConvertFrom-Json
-if ($mod.Name -cne 'AutoDay' -or $mod.Version -cne '0.1.0-preview' -or $mod.EngineVersion -cne '5.8' -or
+if ($mod.Name -cne 'AutoDay' -or $mod.Version -cne '0.1.0' -or $mod.EngineVersion -cne '5.8' -or
         ($mod.PSObject.Properties['Modules'] -and $mod.Modules) -or
         ($mod.PSObject.Properties['Plugins'] -and $mod.Plugins)) {
     throw 'The AutoDay descriptor is invalid or requires a plugin/native module.'

@@ -1,7 +1,8 @@
 # Workshop Preparation
 
-These are local drafts for a new **Auto Day** Workshop item, version
-`0.1.0-preview`. No item has been created or updated by this preparation.
+These files prepare a new **Auto Day** Workshop item for the first release,
+`v0.1.0`. The user submits the upload. Preparing these files does not publish an
+item.
 
 - Description: `description.bbcode`
 - Change notes: `changenotes.txt`
@@ -10,9 +11,10 @@ These are local drafts for a new **Auto Day** Workshop item, version
 - Default native setting: enabled
 
 Upload only the verified `Delivery/AutoDay` package from the selected build.
-Create a new item; do not reuse another mod's item ID. Keep the explicit pending
-gameplay-validation note until the user has tested it in the running game.
+Create a new item; do not reuse another mod's item ID.
 
 Source and documentation: https://github.com/repte/whiskerwood-auto-day
+
+Release: https://github.com/repte/whiskerwood-auto-day/releases/tag/v0.1.0
 
 The description includes the modkit credits and linked DuoQueue banner.

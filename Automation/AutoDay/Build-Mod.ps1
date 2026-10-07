@@ -23,7 +23,7 @@ foreach ($required in @($editor, $uat, $project, $descriptor,
     if (-not (Test-Path -LiteralPath $required -PathType Leaf)) { throw "Required file missing: $required" }
 }
 $mod = Get-Content -LiteralPath $descriptor -Raw | ConvertFrom-Json
-if ($mod.Version -cne '0.1.0-preview') { throw 'Unexpected AutoDay descriptor version' }
+if ($mod.Version -cne '0.1.0') { throw 'Unexpected AutoDay descriptor version' }
 
 $id = (Get-Date -Format 'yyyyMMdd-HHmmss') + '-' + [guid]::NewGuid().ToString('N').Substring(0, 8)
 $output = Join-Path $ProjectRoot "Saved\AutoDayBuilds\$id"
@@ -82,4 +82,4 @@ if ((Get-FileHash -LiteralPath $deliveryPak -Algorithm SHA256).Hash -cne $verifi
 }
 $verification | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $output 'package-verification.json') -Encoding utf8
 Write-Output "AUTODAY_BUILD_PASS: $modDirectory"
-Write-Output 'Preview package only. Gameplay validation remains manual; nothing was installed or published.'
+Write-Output 'Package verified; nothing was installed or published.'

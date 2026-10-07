@@ -1,1 +1,1 @@
-Initial preview: automatic day confirmation with an on/off setting. Enabled by default. In-game testing pending.
+v0.1.0: First release. Automatic day confirmation, enabled by default. One on/off setting; English and German labels.
