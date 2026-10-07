@@ -47,4 +47,4 @@ Unofficial community mod built with the [Whiskerwood modkit](https://github.com/
 
 [MIT license](LICENSE)
 
-[![DuoQueue](https://duoqueue.app/promo/duoq-workshop-banner-whiskerwood.png)](https://duoqueue.app/en/)
+[![DuoQueue](https://duoqueue.app/promo/duoq-workshop-banner-whiskerwood-autopilot.png)](https://duoqueue.app/en/)
